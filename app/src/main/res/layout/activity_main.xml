@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK HERE TO SELECT IMAGE FROM GALLERY"
+        android:id="@+id/buttonSelect"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK HERE TO UPLOAD SELECTED IMAGE ON SERVER "
+        android:id="@+id/buttonUpload"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="481dp"
+        android:layout_above="@+id/editTextImageName"
+        android:layout_below="@+id/buttonSelect"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/editTextImageName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextImagePrice"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:hint="Enter Image Name Here" />
+
+    <EditText
+        android:id="@+id/editTextImagePrice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextImageDesc"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:hint="Enter Price" />
+
+    <EditText
+        android:id="@+id/editTextImageDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonUpload"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:hint="Enter Description" />
+
+</RelativeLayout>
